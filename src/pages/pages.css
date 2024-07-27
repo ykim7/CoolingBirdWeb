@@ -2,22 +2,62 @@
     background-color: #fff;
     margin: 50px auto;
     padding: 20px;
-    width: 80%;
-    align-items: center;
-    justify-content: center;
+    width: 40%;
+    display: flex; /* Flexbox 추가 */
+    flex-direction: column; /* 요소들을 수직으로 쌓기 */
+    align-items: center; /* 모든 항목을 중앙 정렬 */
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     min-height: 300px;
+    min-width: 400px;
 }
 
 .profile-img {
     width: 150px;
     height: auto;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin-bottom: 10px; /* 제목 아래 간격 추가 */
+}
+
+h2 {
+    margin-bottom: 20px; /* 부제목 아래 간격 추가 */
+}
+
+.social-links {
+    margin-bottom: 20px; /* 소셜 링크 아래 간격 추가 */
+}
+
+.social-links a {
+    display: inline-block;
+    width: 50px; /* 아이콘의 크기 조절 */
+    height: 50px; /* 아이콘의 크기 조절 */
+    background-color: white; /* 배경색 설정 */
+    color: black; /* 아이콘 색상 설정 */
+    text-align: center; /* 텍스트 (아이콘)를 가운데 정렬 */
+    line-height: 50px; /* 세로 중앙 정렬 */
+    margin: 0 10px; /* 링크들 사이의 간격 */
+    border-radius: 10px; /* 모서리 둥글게 */
+    border: 1px solid;
+    border-color: rgba(229, 230, 233, 0.5) rgba(223, 224, 228, 0.5) #d0d1d5;
+    transition: background-color 0.3s; /* 호버 효과를 위한 전환 설정 */
+}
+.social-links a:hover {
+    background-color: #f0f0f0; /* 호버 시 배경색 변경 */
+}
+
+.social-links i {
+    vertical-align: middle;
+    font-size: 30px; /* Font Awesome 아이콘 크기 설정 */
 }
 
 .links {
-    gap: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
 .links a {
@@ -29,4 +69,51 @@
     color: black; /* 링크 색상 */
     border: 1px solid;
     border-color: rgba(229, 230, 233, 0.5) rgba(223, 224, 228, 0.5) #d0d1d5;
+}
+
+.links a:hover {
+    color: purple;
+    background-color: #f0f0f0; /* 호버 시 배경색 변경 */
+}
+
+.rotateIn {
+    -webkit-animation-name: rotateIn;
+    animation-name: rotateIn;
+}
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes rotateIn {
+    0% {
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transform: rotate3d(0, 0, 1, -200deg);
+        transform: rotate3d(0, 0, 1, -200deg);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transform: none;
+        transform: none;
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

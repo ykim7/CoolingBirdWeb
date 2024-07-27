@@ -2,7 +2,7 @@ import "./pages.css";
 
 const About = () => {
     return (
-        <div className="content">
+        <div className="content animated fadeIn">
             About
             <p></p>
         </div>
