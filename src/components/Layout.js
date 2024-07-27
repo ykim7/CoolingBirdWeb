@@ -5,8 +5,12 @@ import "./components.css";
 const Layout = ({ children }) => {
     return (
         <div className="layout">
-            <Menu />
-            <main>{children}</main>
+            <div className="upper-part">
+                <Menu />
+                <div className="content-area">
+                    <main>{children}</main>
+                </div>
+            </div>
             <Footer />
         </div>
     );

@@ -1,0 +1,32 @@
+.content {
+    background-color: #fff;
+    margin: 50px auto;
+    padding: 20px;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    min-height: 300px;
+}
+
+.profile-img {
+    width: 150px;
+    height: auto;
+}
+
+.links {
+    gap: 20px;
+}
+
+.links a {
+    background-color: #fff; /* 버튼 배경색 */
+    padding: 10px 20px;
+    margin: 3px 10px;
+    border-radius: 3px; /* 버튼 모서리 둥글게 */
+    text-decoration: none;
+    color: black; /* 링크 색상 */
+    border: 1px solid;
+    border-color: rgba(229, 230, 233, 0.5) rgba(223, 224, 228, 0.5) #d0d1d5;
+}

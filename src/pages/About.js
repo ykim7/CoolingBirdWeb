@@ -1,5 +1,12 @@
 import "./pages.css";
 
-const About = () => {};
+const About = () => {
+    return (
+        <div className="content">
+            About
+            <p></p>
+        </div>
+    );
+};
 
 export default About;
