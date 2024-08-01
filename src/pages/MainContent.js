@@ -29,7 +29,11 @@ const MainContent = () => {
             <div className="links">
                 <a href="/about">About</a>
                 <a href="/contact">Contact</a>
-                <a href="http://resume.coolingbird.com" target="_blank" rel="noopener noreferrer">
+                <a
+                    href="https://ykim7.github.io/Resume_CB/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     Resume
                 </a>
             </div>

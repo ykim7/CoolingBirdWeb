@@ -4,6 +4,7 @@ import Layout from "./components/Layout";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import MainContent from "./pages/MainContent";
+import Resume from "./pages/Resume";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
                     <Route path="/main" exact element={<MainContent />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/contact" element={<Contact />} />
+                    <Route path="resume" element={<Resume />} />
                 </Routes>
             </Layout>
         </Router>
